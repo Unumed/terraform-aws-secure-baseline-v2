@@ -125,6 +125,7 @@ output "guardduty_detector" {
     "eu-north-1"     = one(module.guardduty_baseline_eu-north-1[*].guardduty_detector)
     "eu-west-1"      = one(module.guardduty_baseline_eu-west-1[*].guardduty_detector)
     "eu-west-2"      = one(module.guardduty_baseline_eu-west-2[*].guardduty_detector)
+    "eu-west-3"      = one(module.guardduty_baseline_eu-west-3[*].guardduty_detector)
     "me-south-1"     = one(module.guardduty_baseline_me-south-1[*].guardduty_detector)
     "sa-east-1"      = one(module.guardduty_baseline_sa-east-1[*].guardduty_detector)
     "us-east-1"      = one(module.guardduty_baseline_us-east-1[*].guardduty_detector)
