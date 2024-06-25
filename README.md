@@ -1,4 +1,5 @@
 # Terraform AWS Secure Baseline V2
+Special thanks to [Nozaq](https://github.com/nozaq) for creating the original module [https://registry.terraform.io/modules/nozaq/secure-baseline/aws/latest](https://github.com/nozaq/terraform-aws-secure-baseline) from which we forked.
 
 [![Github Actions](https://github.com/Unumed/terraform-aws-secure-baseline-v2/actions/workflows/main.yml/badge.svg)](https://github.com/Unumed/terraform-aws-secure-baseline-v2/actions/workflows/main.yml)
 [![Releases](https://img.shields.io/github/v/release/Unumed/terraform-aws-secure-baseline-v2)](https://github.com/Unumed/terraform-aws-secure-baseline-v2/releases/latest)
