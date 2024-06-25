@@ -19,6 +19,7 @@ jobs:
         with:
           terraform-version: ${{ steps.minMax.outputs.maxVersion }}
           terraform-docs-version: v0.16.0
+
   validate-examples:
     name: Validate examples
     runs-on: ubuntu-latest
