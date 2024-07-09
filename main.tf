@@ -98,26 +98,27 @@ module "alarm_baseline" {
   count  = var.alarm_baseline_enabled && local.is_cloudtrail_enabled && var.cloudtrail_cloudwatch_logs_enabled ? 1 : 0
   source = "./modules/alarm-baseline"
 
-  unauthorized_api_calls_enabled   = var.unauthorized_api_calls_enabled
-  no_mfa_console_signin_enabled    = var.no_mfa_console_signin_enabled
-  mfa_console_signin_allow_sso     = var.mfa_console_signin_allow_sso
-  root_usage_enabled               = var.root_usage_enabled
-  iam_changes_enabled              = var.iam_changes_enabled
-  cloudtrail_cfg_changes_enabled   = var.cloudtrail_cfg_changes_enabled
-  console_signin_failures_enabled  = var.console_signin_failures_enabled
-  disable_or_delete_cmk_enabled    = var.disable_or_delete_cmk_enabled
-  s3_bucket_policy_changes_enabled = var.s3_bucket_policy_changes_enabled
-  aws_config_changes_enabled       = var.aws_config_changes_enabled
-  security_group_changes_enabled   = var.security_group_changes_enabled
-  nacl_changes_enabled             = var.nacl_changes_enabled
-  network_gw_changes_enabled       = var.network_gw_changes_enabled
-  route_table_changes_enabled      = var.route_table_changes_enabled
-  vpc_changes_enabled              = var.vpc_changes_enabled
-  organizations_changes_enabled    = var.organizations_changes_enabled
-  alarm_namespace                  = var.alarm_namespace
-  cloudtrail_log_group_name        = local.is_cloudtrail_enabled ? module.cloudtrail_baseline[0].log_group : ""
-  sns_topic_name                   = var.alarm_sns_topic_name
-  sns_topic_kms_master_key_id      = var.alarm_sns_topic_kms_master_key_id
+  unauthorized_api_calls_enabled        = var.unauthorized_api_calls_enabled
+  unauthorized_api_calls_custom_pattern = var.unauthorized_api_calls_custom_pattern
+  no_mfa_console_signin_enabled         = var.no_mfa_console_signin_enabled
+  mfa_console_signin_allow_sso          = var.mfa_console_signin_allow_sso
+  root_usage_enabled                    = var.root_usage_enabled
+  iam_changes_enabled                   = var.iam_changes_enabled
+  cloudtrail_cfg_changes_enabled        = var.cloudtrail_cfg_changes_enabled
+  console_signin_failures_enabled       = var.console_signin_failures_enabled
+  disable_or_delete_cmk_enabled         = var.disable_or_delete_cmk_enabled
+  s3_bucket_policy_changes_enabled      = var.s3_bucket_policy_changes_enabled
+  aws_config_changes_enabled            = var.aws_config_changes_enabled
+  security_group_changes_enabled        = var.security_group_changes_enabled
+  nacl_changes_enabled                  = var.nacl_changes_enabled
+  network_gw_changes_enabled            = var.network_gw_changes_enabled
+  route_table_changes_enabled           = var.route_table_changes_enabled
+  vpc_changes_enabled                   = var.vpc_changes_enabled
+  organizations_changes_enabled         = var.organizations_changes_enabled
+  alarm_namespace                       = var.alarm_namespace
+  cloudtrail_log_group_name             = local.is_cloudtrail_enabled ? module.cloudtrail_baseline[0].log_group : ""
+  sns_topic_name                        = var.alarm_sns_topic_name
+  sns_topic_kms_master_key_id           = var.alarm_sns_topic_kms_master_key_id
 
   tags = var.tags
 }
