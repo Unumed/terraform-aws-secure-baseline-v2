@@ -39,6 +39,7 @@ Set up CloudWatch alarms to notify you when critical changes happen in your AWS 
 | <a name="input_sns_topic_kms_master_key_id"></a> [sns\_topic\_kms\_master\_key\_id](#input\_sns\_topic\_kms\_master\_key\_id) | To enable SNS Topic encryption enter value with the ID of a custom master KMS key that is used for encryption | `string` | no |
 | <a name="input_sns_topic_name"></a> [sns\_topic\_name](#input\_sns\_topic\_name) | The name of the SNS Topic which will be notified when any alarm is performed. | `string` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Specifies object tags key and value. This applies to all resources created by this module. | `map(string)` | no |
+| <a name="input_unauthorized_api_calls_custom_pattern"></a> [unauthorized\_api\_calls\_custom\_pattern](#input\_unauthorized\_api\_calls\_custom\_pattern) | A custom pattern for the alarm, if set it will overwride the default pattern. | `string` | no |
 | <a name="input_unauthorized_api_calls_enabled"></a> [unauthorized\_api\_calls\_enabled](#input\_unauthorized\_api\_calls\_enabled) | The boolean flag whether the unauthorized\_api\_calls alarm is enabled or not. No resources are created when set to false. | `bool` | no |
 | <a name="input_vpc_changes_enabled"></a> [vpc\_changes\_enabled](#input\_vpc\_changes\_enabled) | The boolean flag whether the vpc\_changes alarm is enabled or not. No resources are created when set to false. | `bool` | no |
 

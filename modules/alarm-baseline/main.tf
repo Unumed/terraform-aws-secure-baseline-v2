@@ -43,7 +43,7 @@ resource "aws_cloudwatch_log_metric_filter" "unauthorized_api_calls" {
   count = var.unauthorized_api_calls_enabled ? 1 : 0
 
   name           = "UnauthorizedAPICalls"
-  pattern        = "{(($.errorCode = \"*UnauthorizedOperation\") || ($.errorCode = \"AccessDenied*\")) && (($.sourceIPAddress!=\"delivery.logs.amazonaws.com\") && ($.eventName!=\"HeadBucket\"))}"
+  pattern        = var.unauthorized_api_calls_custom_pattern != "" ? var.unauthorized_api_calls_custom_pattern : "{(($.errorCode = \"*UnauthorizedOperation\") || ($.errorCode = \"AccessDenied*\")) && (($.sourceIPAddress!=\"delivery.logs.amazonaws.com\") && ($.eventName!=\"HeadBucket\"))}"
   log_group_name = var.cloudtrail_log_group_name
 
   metric_transformation {
