@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.2.0](https://github.com/Unumed/terraform-aws-secure-baseline-v2/compare/v3.1.0...v3.2.0) (2024-07-09)
+
+
+### Features
+
+* Add overwrite option for the unauthorized api calls alarm ([#23](https://github.com/Unumed/terraform-aws-secure-baseline-v2/issues/23)) ([5d5482e](https://github.com/Unumed/terraform-aws-secure-baseline-v2/commit/5d5482edec3b59fb42b617ca0c55c24ce528d5b9))
+
+
+### Bug Fixes
+
+* Allow custom unathorized api calls pattern ([#25](https://github.com/Unumed/terraform-aws-secure-baseline-v2/issues/25)) ([8e05f29](https://github.com/Unumed/terraform-aws-secure-baseline-v2/commit/8e05f296f97fc99c90b7fdc7a7cfb0431144dfe5))
+
 ## [3.1.0](https://github.com/Unumed/terraform-aws-secure-baseline-v2/compare/v3.0.0...v3.1.0) (2024-06-25)
 
 
