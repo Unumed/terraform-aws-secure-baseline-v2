@@ -4,6 +4,12 @@ variable "unauthorized_api_calls_enabled" {
   default     = true
 }
 
+variable "unauthorized_api_calls_custom_pattern" {
+  description = "A custom pattern for the alarm, if set it will overwride the default pattern."
+  type        = string
+  default     = ""
+}
+
 variable "no_mfa_console_signin_enabled" {
   description = "The boolean flag whether the no_mfa_console_signin alarm is enabled or not. No resources are created when set to false."
   type        = bool
