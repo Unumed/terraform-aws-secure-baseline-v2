@@ -57,3 +57,33 @@ variable "tags" {
     "Terraform" = "true"
   }
 }
+
+variable "recording_frequency" {
+  description = "Specifies the frequency for recording config changes."
+  type        = string
+  default     = "CONTINUOUS"
+}
+
+variable "enable_override" {
+  description = "Boolean to indicate whether to create override settings for specific resource types."
+  type        = bool
+  default     = false
+}
+
+variable "override_description" {
+  description = "Description for the override setting."
+  type        = string
+  default     = ""
+}
+
+variable "override_resource_types" {
+  description = "List of resource types for the override value."
+  type        = list(string)
+  default     = [""]
+}
+
+variable "override_recording_frequency" {
+  description = "Frequency setting for the values described."
+  type        = string
+  default     = ""
+}

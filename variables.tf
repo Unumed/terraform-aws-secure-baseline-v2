@@ -319,6 +319,36 @@ variable "config_global_resources_all_regions" {
   default     = false
 }
 
+variable "config_recording_frequency" {
+  description = "Specifies the frequency for recording config changes."
+  type        = string
+  default     = "CONTINUOUS"
+}
+
+variable "config_enable_override" {
+  description = "Boolean to indicate whether to create override settings for specific resource types."
+  type        = bool
+  default     = false
+}
+
+variable "config_override_description" {
+  description = "Description for the override setting."
+  type        = string
+  default     = ""
+}
+
+variable "config_override_resource_types" {
+  description = "List of resource types for the override value."
+  type        = list(string)
+  default     = []
+}
+
+variable "config_override_recording_frequency" {
+  description = "Frequency setting for the values described."
+  type        = string
+  default     = ""
+}
+
 # --------------------------------------------------------------------------------------------------
 # Variables for cloudtrail-baseline module.
 # --------------------------------------------------------------------------------------------------

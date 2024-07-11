@@ -43,6 +43,19 @@ resource "aws_config_configuration_recorder" "recorder" {
     all_supported                 = true
     include_global_resource_types = var.include_global_resource_types
   }
+  recording_mode {
+    recording_frequency = var.recording_frequency
+
+    dynamic "recording_mode_override" {
+      for_each = var.enable_override == false ? [] : [1]
+
+      content {
+        description         = var.override_description
+        resource_types      = var.override_resource_types
+        recording_frequency = var.override_recording_frequency
+      }
+    }
+  }
 }
 
 resource "aws_config_delivery_channel" "bucket" {
