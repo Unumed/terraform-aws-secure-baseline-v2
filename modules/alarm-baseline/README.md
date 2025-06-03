@@ -2,7 +2,7 @@
 
 Set up CloudWatch alarms to notify you when critical changes happen in your AWS account.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -48,4 +48,4 @@ Set up CloudWatch alarms to notify you when critical changes happen in your AWS 
 | Name | Description |
 |------|-------------|
 | <a name="output_alarm_sns_topic"></a> [alarm\_sns\_topic](#output\_alarm\_sns\_topic) | The SNS topic to which CloudWatch Alarms will be sent. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

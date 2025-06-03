@@ -6,7 +6,7 @@
 - Remove all rules associated with default route tables, default network ACLs and default security groups in the default VPC in all regions.
 - Disable automatic public IP assignments in default subnets.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -42,4 +42,4 @@
 | <a name="output_default_security_group"></a> [default\_security\_group](#output\_default\_security\_group) | The default security group. |
 | <a name="output_default_vpc"></a> [default\_vpc](#output\_default\_vpc) | The default VPC. |
 | <a name="output_vpc_flow_logs_group"></a> [vpc\_flow\_logs\_group](#output\_vpc\_flow\_logs\_group) | The CloudWatch Logs log group which stores VPC Flow Logs. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

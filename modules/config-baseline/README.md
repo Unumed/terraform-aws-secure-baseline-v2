@@ -2,7 +2,7 @@
 
 Enable AWS Config in all regions to automatically take configuration snapshots.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -37,4 +37,4 @@ Enable AWS Config in all regions to automatically take configuration snapshots.
 |------|-------------|
 | <a name="output_config_sns_topic"></a> [config\_sns\_topic](#output\_config\_sns\_topic) | The SNS topic that AWS Config delivers notifications to. |
 | <a name="output_configuration_recorder"></a> [configuration\_recorder](#output\_configuration\_recorder) | The configuration recorder. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

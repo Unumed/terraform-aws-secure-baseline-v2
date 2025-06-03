@@ -116,7 +116,7 @@ This module is composed of several submodules and each of which can be used inde
 - Starting from v0.20, this module requires [Terraform Provider for AWS](https://github.com/terraform-providers/terraform-provider-aws) v3.0 or later. Please use v0.19 if you need to use v2.x or earlier.
 - Starting from v0.10, this module requires Terraform v0.12 or later. Please use v0.9 if you need to use Terraform v0.11 or ealier.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -256,7 +256,7 @@ This module is composed of several submodules and each of which can be used inde
 | <a name="output_support_iam_role"></a> [support\_iam\_role](#output\_support\_iam\_role) | The IAM role used for the support user. |
 | <a name="output_vpc_flow_logs_group"></a> [vpc\_flow\_logs\_group](#output\_vpc\_flow\_logs\_group) | The CloudWatch Logs log group which stores VPC Flow Logs in each region. |
 | <a name="output_vpc_flow_logs_iam_role"></a> [vpc\_flow\_logs\_iam\_role](#output\_vpc\_flow\_logs\_iam\_role) | The IAM role used for delivering VPC Flow Logs to CloudWatch Logs. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 
 [cis amazon web services foundations v1.4.0]: https://www.cisecurity.org/benchmark/amazon_web_services/
 [aws foundational security best practices v1.0.0]: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html

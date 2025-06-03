@@ -2,7 +2,7 @@
 
 Enable CloudTrail in all regions and deliver events to CloudWatch Logs. CloudTrail logs are encrypted using AWS Key Management Service.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -50,4 +50,4 @@ Enable CloudTrail in all regions and deliver events to CloudWatch Logs. CloudTra
 | <a name="output_kms_key"></a> [kms\_key](#output\_kms\_key) | The  KMS key used for encrypting CloudTrail events. |
 | <a name="output_log_delivery_iam_role"></a> [log\_delivery\_iam\_role](#output\_log\_delivery\_iam\_role) | The IAM role used for delivering CloudTrail events to CloudWatch Logs. |
 | <a name="output_log_group"></a> [log\_group](#output\_log\_group) | The CloudWatch Logs log group which stores CloudTrail events. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->

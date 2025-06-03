@@ -2,7 +2,7 @@
 
 Creates a S3 bucket with access logging enabled.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -33,4 +33,4 @@ Creates a S3 bucket with access logging enabled.
 |------|-------------|
 | <a name="output_log_bucket"></a> [log\_bucket](#output\_log\_bucket) | The S3 bucket used for storing access logs of this bucket. |
 | <a name="output_this_bucket"></a> [this\_bucket](#output\_this\_bucket) | This S3 bucket. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
