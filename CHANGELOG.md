@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.3.0](https://github.com/Unumed/terraform-aws-secure-baseline-v2/compare/v3.2.0...v3.3.0) (2025-06-03)
+
+
+### Features
+
+* **guarduty:** allow for custom filters creation ([#28](https://github.com/Unumed/terraform-aws-secure-baseline-v2/issues/28)) ([958d907](https://github.com/Unumed/terraform-aws-secure-baseline-v2/commit/958d90775072c1fc6a91b2badbededfdb1e0a8e3))
+
+
+### Bug Fixes
+
+* **ci:** fix the release-please app ([76f850e](https://github.com/Unumed/terraform-aws-secure-baseline-v2/commit/76f850eb326b7e93cd482da26373e0b2f2fb2426))
+
 ## [3.2.0](https://github.com/Unumed/terraform-aws-secure-baseline-v2/compare/v3.1.0...v3.2.0) (2024-07-09)
 
 
