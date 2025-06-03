@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Terraform min/max versions
         id: minMax
-        uses: clowdhaus/terraform-min-max@v1.3.1
+        uses: clowdhaus/terraform-min-max@v1.3.2
       - name: Pre-commit Terraform ${{ steps.minMax.outputs.maxVersion }}
-        uses: clowdhaus/terraform-composite-actions/pre-commit@v1.9.0
+        uses: clowdhaus/terraform-composite-actions/pre-commit@v1.11.1
         with:
           terraform-version: ${{ steps.minMax.outputs.maxVersion }}
-          terraform-docs-version: v0.16.0
+          terraform-docs-version: v0.20.0
 
   validate-examples:
     name: Validate examples
@@ -28,7 +28,7 @@ jobs:
         shell: bash
         working-directory: examples
     steps:
-      - uses: hashicorp/setup-terraform@v1
+      - uses: hashicorp/setup-terraform@v3
       - name: Checkout
         uses: actions/checkout@v4
       - name: Check examples
