@@ -1,5 +1,5 @@
 config {
-  module = false
+  call_module_type = "all"
   force = false
   disabled_by_default = false
 }
