@@ -56,7 +56,7 @@ module "secure_baseline" {
     aws.us-west-2      = aws.us-west-2
   }
 
-  filter_config = [{
+  guardduty_filter_config = [{
     name        = "guardduty_unique_filter"
     description = "AWS GuardDuty example filter"
     rank        = 1
