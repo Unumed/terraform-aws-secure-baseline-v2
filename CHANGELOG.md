@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.3.2](https://github.com/Unumed/terraform-aws-secure-baseline-v2/compare/v3.3.1...v3.3.2) (2026-08-28)
+
+
+### Bug Fixes
+
+* Stabilize CI pre-commit job by pinning Terraform composite action + TFLint version ([#37](https://github.com/Unumed/terraform-aws-secure-baseline-v2/issues/37)) ([79143e6](https://github.com/Unumed/terraform-aws-secure-baseline-v2/commit/79143e6f44679b97c7bc1ec60f11a4c96cb11039))
+
 ## [3.3.1](https://github.com/Unumed/terraform-aws-secure-baseline-v2/compare/v3.3.0...v3.3.1) (2025-06-04)
 
 
