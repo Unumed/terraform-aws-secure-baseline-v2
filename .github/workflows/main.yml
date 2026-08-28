@@ -15,10 +15,11 @@ jobs:
         id: minMax
         uses: clowdhaus/terraform-min-max@v1.3.2
       - name: Pre-commit Terraform ${{ steps.minMax.outputs.maxVersion }}
-        uses: clowdhaus/terraform-composite-actions/pre-commit@v1.11.1
+        uses: clowdhaus/terraform-composite-actions/pre-commit@v1.14.0
         with:
           terraform-version: ${{ steps.minMax.outputs.maxVersion }}
           terraform-docs-version: v0.20.0
+          tflint-version: v0.60.0
 
   validate-examples:
     name: Validate examples
