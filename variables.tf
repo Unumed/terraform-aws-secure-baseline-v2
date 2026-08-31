@@ -599,6 +599,19 @@ variable "guardduty_filter_config" {
   default = null
 }
 
+variable "guardduty_enable_kubernetes_protection" {
+  description = "Configure and enable Kubernetes audit logs as a data source for Kubernetes protection. Defaults to `true`."
+  type        = bool
+  default     = true
+}
+
+variable "guardduty_enable_malware_protection" {
+  description = "Configure and enable Malware Protection as data source for EC2 instances with findings for the detector. Defaults to `true`."
+  type        = bool
+  default     = true
+}
+
+
 # --------------------------------------------------------------------------------------------------
 # Variables for s3-baseline module.
 # --------------------------------------------------------------------------------------------------
